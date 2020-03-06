@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai-2</title>
+</head>
+<body>
+<input id="input_arr" type="text" >
+<input id="but_add" type="button" value="ADD" onclick="but_add()" >
+<input id="but_reverse" type="button" value="REVERSE" onclick="but_reverse()" >
+<p id="display" ></p>
+<script>
+    let arr = [];
+    function but_add() {
+        let word = document.getElementById('input_arr').value;
+        arr.push(word);
+        console.log(arr)
+        input_arr.value = ' ';
+    }
+    function but_reverse() {
+        let count = arr.length-1;
+        let new_arr = new Array(arr.length);
+        for (let i=0;i<arr.length;i++){
+            new_arr[i]=arr[count-i];
+        }
+        console.log(new_arr)
+    }
+</script>
+</body>
+</html>

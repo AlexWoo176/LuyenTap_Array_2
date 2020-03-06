@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-5</title>
+</head>
+<body>
+<script>
+    let word_a=prompt('Nhập chuỗi a:');
+    let word_b=prompt('Nhập chuỗi b:');
+    count=0;
+    if (word_a.length==word_b.length){
+        for (let i=0;i<word_a.length;i++){
+            if (word_a[i]===word_b[i]){
+                count++;
+            }
+        }
+    }
+    if (count=word_b.length){
+        document.write('2 chuỗi giống');
+    }
+    else {
+        document.write('2 chuỗi không giống nhau')
+    }
+</script>
+</body>
+</html>

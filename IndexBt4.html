@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài-4</title>
+</head>
+<body>
+<script>
+    let word = prompt('Nhập chuỗi :');
+    let arr = word.toString();
+    let n = arr.length;
+    let count = 1;
+    if (n==' '){
+        document.write('Số từ trong chuỗi = 0')
+    }
+    else {for (let i=0;i<n;i++){
+        if (arr[i]==' '){
+            count++
+        }
+    }
+        document.write("Số từ trong chuỗi là :"+" "+ count);}
+</script>
+</body>
+</html>

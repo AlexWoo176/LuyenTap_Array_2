@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-6</title>
+</head>
+<body>
+<script>
+    let word = prompt('Nhập chuỗi');
+    let arr =[];
+    for (let i=0;i<word.length;i++){
+        if (word[i]!='-'){
+            arr.push(word[i]);
+        }
+        else if (word[i]=='-'){
+            arr.push('_');
+        }
+    }
+    document.write(arr.join(''))
+</script>
+</body>
+</html>
